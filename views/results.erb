@@ -5,9 +5,11 @@
 <% else %>
   <% if @triangle.scalene?() %>
   <h3>It is a scalene triangle</h3>
-  <% elsif @triangle.equilateral?() %>
+  <% end %>
+  <% if @triangle.equilateral?() %>
     <h3>It is an equilateral triangle</h3>
-  <% elsif @triangle.isosceles?() %>
+  <% end %>
+  <% if @triangle.isosceles?() %>
     <h3>It is an isosceles triangle</h3>
   <% end %>
 <% end %>
